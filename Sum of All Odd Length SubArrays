@@ -1,0 +1,13 @@
+class Solution {
+    public int sumOddLengthSubarrays(int[] arr) {
+        int n=arr.length;
+        int sum=0;
+            for(int s=0;s<n;s++){
+                int tS=(s+1)*(n-s);
+                int OC=(tS+1)/2;
+                    sum+=arr[s]*OC;
+                }
+           
+        return sum;
+    }
+}
